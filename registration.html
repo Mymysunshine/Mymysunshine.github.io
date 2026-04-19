@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>校园注册表单</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="container">南京信息工程大学</h1>
+    <h2 class="container">学生注册表单</h2>
+
+    <p>
+        <a href="index.html">首页</a> |
+        <a href="about.html">关于我们</a> |
+        <a href="registration-form.html">注册</a>
+    </p>
+
+    <h3 class="table-container">个人信息</h3>
+
+    <form action="submit-form.html" method="get">
+        <label for="fullname">姓名：</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="请输入姓名"><br><br>
+
+        <label for="email">邮箱：</label><br>
+        <input type="email" id="email" name="email" placeholder="请输入邮箱"><br><br>
+
+        <label for="password">密码：</label><br>
+        <input type="password" id="password" name="password" placeholder="请设置密码"><br><br>
+
+        <label>性别：</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">男</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">其他</label><br><br>
+
+        <label for="major">选择专业：</label><br>
+        <select id="major" name="major">
+            <option value="Computer Science">计算机科学</option>
+            <option value="Environmental Science">环境科学</option>
+            <option value="Business Administration">工商管理</option>
+            <option value="Physics">物理学</option>
+        </select><br><br>
+
+        <label>技能（可多选）：</label><br>
+        <input type="checkbox" id="coding" name="skills" value="coding">
+        <label for="coding">编程</label><br>
+        <input type="checkbox" id="design" name="skills" value="design">
+        <label for="design">设计</label><br>
+        <input type="checkbox" id="writing" name="skills" value="writing">
+        <label for="writing">写作</label><br>
+        <input type="checkbox" id="public_speaking" name="skills" value="public_speaking">
+        <label for="public_speaking">演讲</label><br><br>
+
+        <input type="submit" value="注册">
+        <input type="reset" value="清空表单">
+    </form>
+    <p>已有账号？<a href="login.html">去登录</a></p>
+
+    <footer>
+        <p>&copy; 2025 校园网站 保留所有权利。</p>
+    </footer>
+</body>
+</html>
